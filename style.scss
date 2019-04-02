@@ -368,7 +368,13 @@ h1,h2,h3,h4,h5,h6 {
   bottom: 0;
   font-family: $font-serif;
   font-weight: bold;
-  font-size: $font-regular;
+
+  h6 {
+    display: inline-block;
+    font-size: $font-regular;
+    margin-top: 0;
+    margin-bottom: .5em;
+  }
 
   a {
     display: inline-block;
@@ -388,25 +394,29 @@ h1,h2,h3,h4,h5,h6 {
 
   $font-small: 1rem;
   $font-regular: 1.2rem;
-  $font-large: 1.6rem;
+  $font-large: 1.4rem;
   $font-x-large: 2.4rem;
   $body-padding-x: 22px;
 
   body {
     padding: $body-padding-x;
   }
+
   .slideshow {
     top: 15vh;
     left: $body-padding-x;
     width: calc(100vw - 2 * #{$body-padding-x});
   }
+
   .details {
-    bottom: 12vh;
+    bottom: 10vh;
     right: $body-padding-x;
     width: calc(100vw - 2 * #{$body-padding-x});
     text-align: center;
   }
+
   .details .details__item h1 { font-size: $font-x-large; }
+
   .details .details__item small { font-size: $font-large; }
 
   .site-link {
@@ -419,7 +429,7 @@ h1,h2,h3,h4,h5,h6 {
     top: 93vh;
     left: $body-padding-x;
     height: 5vh;
-    width: calc(100vw - 2 * $body-padding-x);
+    width: calc(100vw - 2 * #{$body-padding-x});
   }
 
   .count {
@@ -440,6 +450,7 @@ h1,h2,h3,h4,h5,h6 {
   .header h2 {
     font-size: $font-large;
   }
+
   .header small {
     font-size: $font-regular;
   }
@@ -451,12 +462,20 @@ h1,h2,h3,h4,h5,h6 {
 
   .main--about article {
     flex-basis: 100%;
-    padding-right: calc(#{$body-padding-x});
-    padding-left: calc(#{$body-padding-x} / 2);
+    padding: 0;
   }
 
   .socials {
-    bottom: -50px;
+    bottom: -100px;
+    margin-bottom: 50px;
+  }
+
+  .socials h6 {
+    display: block;
+  }
+
+  .socials a:first-of-type {
+    margin-left: 0;
   }
 }
 

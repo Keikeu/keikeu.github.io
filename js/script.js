@@ -7,8 +7,8 @@ for(let i = 0; i < counts.length; i++) {
   counts[i].addEventListener('click', () => { changeSlide(i); });
 }
 
-document.body.addEventListener("mousewheel", MouseWheelHandler, false);
-document.body.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+document.getElementById('scroll-capture').addEventListener("mousewheel", MouseWheelHandler, false);
+document.getElementById('scroll-capture').addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 
 
 function MouseWheelHandler(e)
