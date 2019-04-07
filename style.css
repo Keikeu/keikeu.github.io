@@ -148,9 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slide-overlay {
   visibility: hidden;
-  transform: rotate(30deg);
-  transform: translateX(-100%);
-  transition: all 1s cubic-bezier(0.58, 0, 0.39, 0.96) 0s; }
+  transform: translateX(-100%); }
   .slide-overlay:nth-of-type(2) {
     background: #ff7373; }
   .slide-overlay:nth-of-type(3) {

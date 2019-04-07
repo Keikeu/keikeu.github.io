@@ -199,9 +199,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .slide-overlay {
   visibility: hidden;
-  transform: rotate(30deg);
   transform: translateX(-100%);
-  transition: $transition-long;
 
   &:nth-of-type(2) {
     background: #ff7373;
