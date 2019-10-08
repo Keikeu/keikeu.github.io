@@ -40,9 +40,9 @@ function changeSlide(i) {
   }
 
   switch (current) {
-    case (0) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/Atrium/"); break;
+    case (0) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/Pegs/"); break;
     case (1) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/Nibble/"); break;
-    case (2) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/Pegs/"); break;
+    case (2) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/Atrium/"); break;
     case (3) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/Clinic/"); break;
     case (4) : document.getElementsByClassName('site-link')[0].setAttribute('href', "https://keikeu.github.io/bubble-sort/"); break;
     default : document.getElementsByClassName('site-link')[0].setAttribute('href', "#");
