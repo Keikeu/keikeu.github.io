@@ -391,6 +391,7 @@ h6 {
 
    body {
       padding: $body-padding-x;
+      height: calc(var(--vh, 1vh) * 100);
    }
 
    .slideshow {
@@ -400,7 +401,7 @@ h6 {
    }
 
    .details {
-      bottom: 10vh;
+      bottom: calc(var(--vh, 1vh) * 10);
       right: $body-padding-x;
       width: calc(100vw - 2 * #{$body-padding-x});
       text-align: center;
@@ -421,7 +422,7 @@ h6 {
    }
 
    .main--projects aside {
-      top: 93vh;
+      bottom: calc(var(--vh, 1vh) * 2);
       left: $body-padding-x;
       height: 5vh;
       width: calc(100vw - 2 * #{$body-padding-x});
