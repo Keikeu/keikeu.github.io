@@ -4,11 +4,6 @@ const details = document.getElementsByClassName('details__item');
 let current = 0;
 let locked = false; // lock on-scroll event if animation is still in progress
 
-window.addEventListener('resize', () => {
-   let vh = window.innerHeight * 0.01;
-   document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
 for (let i = 0; i < counts.length; i++) {
    counts[i].addEventListener('click', () => {
       changeSlide(i);
