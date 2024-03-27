@@ -239,7 +239,7 @@ h6 {
 
 .details {
   position: absolute;
-  bottom: 40px;
+  bottom: 12vh;
   right: 20vw;
   width: 60vw;
   background-color: #fff;
@@ -268,7 +268,7 @@ h6 {
 .details .details__item small {
   font-family: "Signika Negative", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #5a5a5a;
 }
 
