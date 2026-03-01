@@ -45,19 +45,29 @@ function changeSlide(i) {
 
   switch (current) {
     case 0:
-      document.getElementsByClassName("site-link")[0].setAttribute("href", "https://cookyourgoose.eu");
+      document
+        .getElementsByClassName("site-link")[0]
+        .setAttribute("href", "https://cookyourgoose.eu");
       break;
     case 1:
-      document.getElementsByClassName("site-link")[0].setAttribute("href", "https://keikeu.github.io/Hoporo/");
+      document
+        .getElementsByClassName("site-link")[0]
+        .setAttribute("href", "https://keikeu.github.io/Recitle/");
       break;
     case 2:
-      document.getElementsByClassName("site-link")[0].setAttribute("href", "https://keikeu.github.io/Pegs/");
+      document
+        .getElementsByClassName("site-link")[0]
+        .setAttribute("href", "https://keikeu.github.io/Hoporo/");
       break;
     case 3:
-      document.getElementsByClassName("site-link")[0].setAttribute("href", "https://keikeu.github.io/Nibble/");
+      document
+        .getElementsByClassName("site-link")[0]
+        .setAttribute("href", "https://keikeu.github.io/Pegs/");
       break;
     case 4:
-      document.getElementsByClassName("site-link")[0].setAttribute("href", "https://keikeu.github.io/bubble-sort/");
+      document
+        .getElementsByClassName("site-link")[0]
+        .setAttribute("href", "https://keikeu.github.io/Nibble/");
       break;
     default:
       document.getElementsByClassName("site-link")[0].setAttribute("href", "#");
