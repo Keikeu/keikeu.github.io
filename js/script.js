@@ -52,22 +52,25 @@ function changeSlide(i) {
     case 1:
       document
         .getElementsByClassName("site-link")[0]
-        .setAttribute("href", "https://keikeu.github.io/Recitle/");
+        .setAttribute(
+          "href",
+          "https://thermostat-democracy-vercel.vercel.app/",
+        );
       break;
     case 2:
       document
         .getElementsByClassName("site-link")[0]
-        .setAttribute("href", "https://keikeu.github.io/Hoporo/");
+        .setAttribute("href", "https://keikeu.github.io/Recitle/");
       break;
     case 3:
       document
         .getElementsByClassName("site-link")[0]
-        .setAttribute("href", "https://keikeu.github.io/Pegs/");
+        .setAttribute("href", "https://keikeu.github.io/Hoporo/");
       break;
     case 4:
       document
         .getElementsByClassName("site-link")[0]
-        .setAttribute("href", "https://keikeu.github.io/Nibble/");
+        .setAttribute("href", "https://keikeu.github.io/Pegs/");
       break;
     default:
       document.getElementsByClassName("site-link")[0].setAttribute("href", "#");
