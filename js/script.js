@@ -52,10 +52,7 @@ function changeSlide(i) {
     case 1:
       document
         .getElementsByClassName("site-link")[0]
-        .setAttribute(
-          "href",
-          "https://thermostat-democracy-vercel.vercel.app/",
-        );
+        .setAttribute("href", "https://thermostat-democracy.vercel.app/");
       break;
     case 2:
       document
