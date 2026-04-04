@@ -43,10 +43,9 @@ export const Project = ({
       <Image
         src={imageSrc}
         alt={title + " screenshot"}
-        // 2770 × 1760
-        width={2770}
-        height={1760}
-        className="w-full rounded-sm"
+        width={1116}
+        height={710}
+        className="w-full rounded-sm dark:brightness-80"
       />
     </li>
   );
