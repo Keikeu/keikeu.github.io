@@ -20,7 +20,7 @@ export default function Home() {
         <Divider />
 
         <main>
-          <section className="relative my-20 text-balance">
+          <section className="relative my-20">
             <SectionTitle>About</SectionTitle>
             <p className="mb-6">
               Hi, I&apos;m Karolina, a frontend developer based in The Hague
@@ -194,7 +194,7 @@ export default function Home() {
 
         <Divider />
 
-        <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm text-balance">
+        <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm">
           <p>
             <b>Last modified:</b>
             <span className="ml-2">4 Apr, 2026</span>
