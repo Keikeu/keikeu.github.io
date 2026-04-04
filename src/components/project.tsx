@@ -1,0 +1,47 @@
+import { Badge } from "@/components/badge";
+import Image from "next/image";
+import LinkIcon from "./link-icon";
+
+export const Project = ({
+  index,
+  title,
+  blurb,
+  description,
+  skills,
+  imageSrc,
+  link,
+}: {
+  index: string;
+  title: string;
+  blurb: string;
+  description?: string;
+  skills: string[];
+  imageSrc: string;
+  link: string;
+}) => {
+  return (
+    <li className="flex flex-col gap-3">
+      <span className="text-foreground-muted font-mono">{index}</span>
+      <a href={link} target="_blank" className="flex gap-1 group w-fit">
+        <h4 className="text-accent-foreground font-bold text-xl tracking-tight">
+          {title}
+        </h4>
+        <LinkIcon size={24} />
+      </a>
+      <p className="">{blurb}</p>
+      <div className="flex gap-2 flex-wrap">
+        {skills.map((skill) => (
+          <Badge key={skill}>{skill}</Badge>
+        ))}
+      </div>
+      <Image
+        src={imageSrc}
+        alt={title + " screenshot"}
+        // 2770 × 1760
+        width={2770}
+        height={1760}
+        className="w-full rounded-sm"
+      />
+    </li>
+  );
+};

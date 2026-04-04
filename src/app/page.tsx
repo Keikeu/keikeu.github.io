@@ -1,65 +1,214 @@
-import Image from "next/image";
+import { ExperienceCard } from "@/components/experience-card";
+import { Link } from "@/components/link";
+import { Project } from "@/components/project";
+import { NameWithPronunciation } from "@/components/name-with-pronunciation";
+import { SectionTitle } from "@/components/section-title";
+import { ThemeSwitcher } from "@/components/theme-switcher";
+import { Divider } from "@/components/divider";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="lg:pl-32 relative overflow-x-hidden">
+      <ThemeSwitcher />
+
+      <div className="max-w-[640px] mx-auto pt-10 md:pt-16 px-6 md:px-10 border-x border-accent-border">
+        <header className="mb-10">
+          <NameWithPronunciation />
+          <h2 className="text-lg md:text-2xl">Frontend Developer</h2>
+        </header>
+
+        <Divider />
+
+        <main>
+          <section className="relative my-20 text-balance">
+            <SectionTitle>About</SectionTitle>
+            <p className="mb-6">
+              Hi, I&apos;m Karolina, a frontend developer based in The Hague.
+            </p>
+            <p className="mb-6">
+              I&apos;ve spent the last 6+ years building and shipping software
+              for early stage startups. I combine strong technical skills with a
+              deep sense of form and aesthetics. I do my best work on small,
+              highly collaborative teams. I care about the details, and enjoy
+              writing code by hand.
+            </p>
+            <p className="mb-6">
+              My professional journey started at a small software house where I
+              built a diverse portfolio of client projects - including a job
+              search application, a shipping container scraper, and a 3D
+              modeling tool. That is where I first learned and fell in love with
+              React.
+            </p>
+            <p className="mb-6">
+              Later, I took an opportunity to join an early-stage Polish-French
+              startup with an ambitious goal of creating world-class knowledge
+              platform for customer service. I had significant involvement in
+              developing their core features.
+            </p>
+            <p className="mb-6">
+              Currently, I work at a Rotterdam-based startup building software
+              that helps large companies measure their environmental impact.
+            </p>
+            <p className="mb-6">
+              I have a big love for climbing, sewing, and puzzles.
+            </p>
+            <p className="mb-6">
+              You can gain further insights into my background and interests
+              through my projects.
+            </p>
+          </section>
+
+          <section className="relative my-20">
+            <SectionTitle>Experience</SectionTitle>
+            <ol>
+              <ExperienceCard
+                company="Salacia Solutions"
+                position="Frontend Developer"
+                link="https://salaciasolutions.com/"
+                logoSrc="/salacia.svg"
+                period="24 ~"
+              />
+              <ExperienceCard
+                company="Stonly"
+                position="Junior → Frontend Engineer"
+                link="https://stonly.com"
+                logoSrc="/stonly.svg"
+                period="19 - 23"
+              />
+              <ExperienceCard
+                company="Futurum Technology"
+                position="Intern → Junior Frontend Developer"
+                link="https://futurum.tech"
+                logoSrc="/futurum.svg"
+                period="18 - 19"
+              />
+            </ol>
+          </section>
+
+          <section className="relative my-20">
+            <SectionTitle>Education</SectionTitle>
+            <ol>
+              <ExperienceCard
+                company="AGH University of Science and Technology"
+                position="Applied Computer Science (BSc)"
+                link="https://www.agh.edu.pl/en/"
+                logoSrc="/agh.svg"
+                period="16 - 20"
+              />
+            </ol>
+          </section>
+
+          <section className="relative my-20">
+            <SectionTitle>Projects</SectionTitle>
+            <ol className="flex flex-col gap-18">
+              <Project
+                index="01"
+                title="Cook Your Goose"
+                blurb="My biggest project yet. Recipe manager with web scraping, meal planning and grocery list generation. I use it daily."
+                description="My biggest project yet, years in the making. I had such a blast designing it in Figma, creating a full custom design system in React, and finally connecting it with backend coded by my boyfriend. I use it every day and hope to expand it into a profitable app someday."
+                skills={[
+                  "React",
+                  "Styled Components",
+                  "Framer Motion",
+                  "custom design system",
+                  "React Context",
+                ]}
+                imageSrc="/cook-your-goose.png"
+                link="https://cookyourgoose.eu"
+              />
+              <Project
+                index="02"
+                title="Thermostat Democracy"
+                blurb="Office temperature voting system. Allows for creating surveys, voting and advanced analytics."
+                skills={[
+                  "React",
+                  "Next.js",
+                  "Tailwind CSS",
+                  "shadcn",
+                  "Vercel",
+                  "Supabase",
+                ]}
+                imageSrc="/thermostat-democracy.png"
+                link="https://thermostat-democracy.vercel.app"
+              />
+              <Project
+                index="03"
+                title="Recitle"
+                blurb="Weekend hackathon project - daily game where you guess the song based on its paraphrased lyrics."
+                skills={["React", "Styled Components", "AI"]}
+                imageSrc="/recitle.png"
+                link="https://karolina.place/Recitle"
+              />
+              <Project
+                index="04"
+                title="Hoporo"
+                blurb="3D platformer game inspired by 2004's Hopmon."
+                skills={["JavaScript", "Three.js"]}
+                imageSrc="/hoporo.png"
+                link="https://karolina.place/Hoporo"
+              />
+            </ol>
+          </section>
+
+          {/* <section className="relative my-20">
+            <SectionTitle>Recommendations</SectionTitle>
+            <p>
+              These are the things I have consumed and loved and want to share
+              with others.
+            </p>
+            <Recommendation href="">Nirvanna The Band The Show</Recommendation>
+            <Recommendation href="">
+              Être et avoir (To Be and to Have)
+            </Recommendation>
+            <Recommendation href="">dimensions.com</Recommendation>
+            <Recommendation href="">
+              The other side of the bridge(?)
+            </Recommendation>
+            <Recommendation href="">Fights in Tight Spaces</Recommendation>
+          </section> */}
+
+          <section className="relative my-20">
+            <SectionTitle>Connect</SectionTitle>
+            <Link
+              href="mailto:karolina.m.placek@gmail.com"
+              label="Email"
+              username="karolina.m.placek&#64;gmail.com"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+            <Link
+              href="https://www.linkedin.com/in/karolina-m-placek/"
+              label="LinkedIn"
+              username="@karolina-m-placek"
+            />
+            <Link
+              href="https://github.com/keikeu"
+              label="GitHub"
+              username="@keikeu"
+            />
+            <Link
+              href="https://www.dribbble.com/sebra"
+              label="Dribbble"
+              username="@sebra"
+            />
+          </section>
+        </main>
+
+        <Divider />
+
+        <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm text-balance">
+          <p>
+            <b>Last modified:</b>
+            <span className="ml-2">4 Apr, 2026</span>
+          </p>
+          <p className="mt-4">
+            Designed in <b>Figma</b>. Built with <b>Next.js</b> and{" "}
+            <b>Tailwind</b>. Deployed with <b>Vercel</b>.
+          </p>
+          <p className="mt-4">
+            All text in this portfolio was written by a human and may include
+            mistakes, typos, and oxford commas.
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
