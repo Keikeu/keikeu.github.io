@@ -22,11 +22,17 @@ export const Project = ({
   return (
     <li className="flex flex-col gap-3">
       <span className="text-foreground-muted font-mono">{index}</span>
-      <a href={link} target="_blank" className="flex gap-1 group w-fit">
-        <h4 className="text-accent-foreground font-bold text-xl tracking-tight">
+      <a
+        href={link}
+        target="_blank"
+        className="flex group w-fit inline-block relative"
+      >
+        <h4 className="text-accent-foreground font-bold text-xl tracking-tight inline">
           {title}
         </h4>
-        <LinkIcon size={24} />
+        <span className="absolute ml-0.5">
+          <LinkIcon size={24} />
+        </span>
       </a>
       <p className="">{blurb}</p>
       <div className="flex gap-2 flex-wrap">

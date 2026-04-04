@@ -27,9 +27,15 @@ export const ExperienceCard = ({
         </div>
 
         <div className="flex flex-col">
-          <a className="flex gap-0.5 group w-fit" href={link} target="_blank">
+          <a
+            className="flex group w-fit inline-block relative"
+            href={link}
+            target="_blank"
+          >
             <strong className="text-accent-foreground">{company}</strong>
-            <LinkIcon size={20} />
+            <span className="absolute ml-0.5">
+              <LinkIcon size={20} />
+            </span>
           </a>
           <span className="text-foreground-muted text-sm">{position}</span>
         </div>
