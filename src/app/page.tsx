@@ -113,7 +113,7 @@ export default function Home() {
                   "custom design system",
                   "React Context",
                 ]}
-                imageSrc="/cook-your-goose.png"
+                imageSrc="/cook-your-goose.webp"
                 link="https://cookyourgoose.eu"
               />
               <Project
@@ -128,7 +128,7 @@ export default function Home() {
                   "Vercel",
                   "Supabase",
                 ]}
-                imageSrc="/thermostat-democracy.png"
+                imageSrc="/thermostat-democracy.webp"
                 link="https://thermostat-democracy.vercel.app"
               />
               <Project
@@ -136,7 +136,7 @@ export default function Home() {
                 title="Recitle"
                 blurb="Weekend hackathon project - daily game where you guess the song based on its paraphrased lyrics."
                 skills={["React", "Styled Components", "AI"]}
-                imageSrc="/recitle.png"
+                imageSrc="/recitle.webp"
                 link="https://keikeu.github.io/Recitle"
               />
               <Project
@@ -144,7 +144,7 @@ export default function Home() {
                 title="Hoporo"
                 blurb="3D platformer game inspired by 2004's Hopmon."
                 skills={["JavaScript", "Three.js"]}
-                imageSrc="/hoporo.png"
+                imageSrc="/hoporo.webp"
                 link="https://keikeu.github.io/Hoporo"
               />
             </ol>
