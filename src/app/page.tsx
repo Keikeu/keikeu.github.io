@@ -23,14 +23,15 @@ export default function Home() {
           <section className="relative my-20 text-balance">
             <SectionTitle>About</SectionTitle>
             <p className="mb-6">
-              Hi, I&apos;m Karolina, a frontend developer based in The Hague.
+              Hi, I&apos;m Karolina, a frontend developer based in The Hague
+              combining strong technical skills with a deep sense of form and
+              aesthetics.
             </p>
             <p className="mb-6">
               I&apos;ve spent the last 6+ years building and shipping software
-              for early stage startups. I combine strong technical skills with a
-              deep sense of form and aesthetics. I do my best work on small,
-              highly collaborative teams. I care about the details, and enjoy
-              writing code by hand.
+              for early stage startups. I do my best work on small, highly
+              collaborative teams. I care about the details, and enjoy writing
+              code by hand.
             </p>
             <p className="mb-6">
               My professional journey started at a small software house where I
@@ -53,8 +54,7 @@ export default function Home() {
               I have a big love for climbing, sewing, and puzzles.
             </p>
             <p className="mb-6">
-              You can gain further insights into my background and interests
-              through my projects.
+              You can gain further insights into who I am through my projects.
             </p>
           </section>
 
@@ -137,7 +137,7 @@ export default function Home() {
                 blurb="Weekend hackathon project - daily game where you guess the song based on its paraphrased lyrics."
                 skills={["React", "Styled Components", "AI"]}
                 imageSrc="/recitle.png"
-                link="https://karolina.place/Recitle"
+                link="https://keikeu.github.io/Recitle"
               />
               <Project
                 index="04"
@@ -145,7 +145,7 @@ export default function Home() {
                 blurb="3D platformer game inspired by 2004's Hopmon."
                 skills={["JavaScript", "Three.js"]}
                 imageSrc="/hoporo.png"
-                link="https://karolina.place/Hoporo"
+                link="https://keikeu.github.io/Hoporo"
               />
             </ol>
           </section>
