@@ -17,7 +17,7 @@ export const NameWithPronunciation = () => {
 
   return (
     <div
-      className="relative overflow-hidden mb-3 cursor-default"
+      className="relative overflow-hidden mb-3 cursor-default select-none"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
