@@ -13,6 +13,8 @@
   --accent-background: #5b35470c;
   --accent-border: #5b354722;
 
+  --glass: #ffffff9f;
+
   --glow-gradient: radial-gradient(
     circle,
     #ffbe9830 0%,
@@ -32,6 +34,8 @@
   --accent-background: #ffbe9812;
   --accent-border: #ffbe9822;
 
+  --glass: #ffffffbf;
+
   --glow-gradient: radial-gradient(
     circle,
     #99547c20 0%,
@@ -50,6 +54,8 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-background: var(--accent-background);
   --color-accent-border: var(--accent-border);
+
+  --color-glass: var(--glass);
 
   --background-image-glow-gradient: var(--glow-gradient);
 

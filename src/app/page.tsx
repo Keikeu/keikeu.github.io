@@ -5,6 +5,7 @@ import { NameWithPronunciation } from "@/components/name-with-pronunciation";
 import { SectionTitle } from "@/components/section-title";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Divider } from "@/components/divider";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -83,52 +84,9 @@ export default function Home() {
           <section className="relative my-20">
             <SectionTitle>Projects</SectionTitle>
             <ol className="flex flex-col gap-18">
-              <Project
-                index="01"
-                title="Cook Your Goose"
-                blurb="My biggest project yet. Recipe manager with web scraping, meal planning and grocery list generation. I use it daily."
-                description="My biggest project yet, years in the making. I had such a blast designing it in Figma, creating a full custom design system in React, and finally connecting it with backend coded by my boyfriend. I use it every day and hope to expand it into a profitable app someday."
-                skills={[
-                  "React",
-                  "Styled Components",
-                  "Framer Motion",
-                  "custom design system",
-                  "React Context",
-                ]}
-                imageSrc="/cook-your-goose.webp"
-                link="https://cookyourgoose.eu"
-              />
-              <Project
-                index="02"
-                title="Thermostat Democracy"
-                blurb="Office temperature voting system. Allows for creating surveys, voting and advanced analytics."
-                skills={[
-                  "React",
-                  "Next.js",
-                  "Tailwind CSS",
-                  "shadcn",
-                  "Vercel",
-                  "Supabase",
-                ]}
-                imageSrc="/thermostat-democracy.webp"
-                link="https://thermostat-democracy.vercel.app"
-              />
-              <Project
-                index="03"
-                title="Recitle"
-                blurb="Weekend hackathon project - daily game where you guess the song based on its paraphrased lyrics."
-                skills={["React", "Styled Components", "AI"]}
-                imageSrc="/recitle.webp"
-                link="https://keikeu.github.io/Recitle"
-              />
-              <Project
-                index="04"
-                title="Hoporo"
-                blurb="3D platformer game inspired by 2004's Hopmon."
-                skills={["JavaScript", "Three.js"]}
-                imageSrc="/hoporo.webp"
-                link="https://keikeu.github.io/Hoporo"
-              />
+              {projects.map((project, i) => (
+                <Project key={project.title} index={i} {...project} />
+              ))}
             </ol>
           </section>
 
