@@ -15,11 +15,14 @@ export const NameWithPronunciation = () => {
     hovered: { y: isSmallScreen ? -28 : -48 },
   };
 
+  function toggleAnimation() {
+    setHovered((prev) => !prev);
+  }
+
   return (
     <div
-      className="relative overflow-hidden mb-3 cursor-default select-none"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      className="relative overflow-hidden mb-3 cursor-pointer"
+      onClick={toggleAnimation}
     >
       <h1 className="text-[32px] md:text-[48px] font-black text-accent-foreground tracking-tight leading-none font-serif">
         {name.split("").map((letter, i) => (
@@ -31,7 +34,7 @@ export const NameWithPronunciation = () => {
               duration: 0.2,
               delay: hovered ? i * 0.01 : (pronunciation.length - i) * 0.01,
             }}
-            className="inline-block cursor-default"
+            className="inline-block"
           >
             {letter === " " ? "\u00A0" : letter}
           </motion.span>
@@ -47,7 +50,7 @@ export const NameWithPronunciation = () => {
               duration: 0.3,
               delay: hovered ? i * 0.01 : (pronunciation.length - i) * 0.01,
             }}
-            className="inline-block cursor-default"
+            className="inline-block"
           >
             {letter === " " ? "\u00A0" : letter}
           </motion.span>
