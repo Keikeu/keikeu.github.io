@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LinkIcon from "./link-icon";
+import LinkIcon from "@/components/link-icon";
 
 export const ExperienceCard = ({
   company,
@@ -16,7 +16,7 @@ export const ExperienceCard = ({
 }) => {
   return (
     <li className="flex bg-accent-background rounded-sm p-2 pr-4 mb-4 justify-between items-center">
-      <div className="flex gap-4">
+      <div className="flex gap-2 md:gap-4">
         <div className="w-[48px] h-[48px] flex-shrink-0 rounded-sm bg-background dark:bg-foreground flex items-center justify-center">
           <Image
             src={logoSrc}
@@ -28,13 +28,13 @@ export const ExperienceCard = ({
 
         <div className="flex flex-col">
           <a
-            className="flex group w-fit inline-block relative"
+            className="group w-fit inline-block relative"
             href={link}
             target="_blank"
           >
             <strong className="text-accent-foreground">{company}</strong>
             <span className="absolute ml-0.5">
-              <LinkIcon size={20} />
+              <LinkIcon size={18} />
             </span>
           </a>
           <span className="text-foreground-muted text-sm">{position}</span>

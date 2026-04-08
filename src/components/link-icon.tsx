@@ -1,12 +1,15 @@
 export default function LinkIcon({
   fill = "var(--accent-foreground)",
-  size = 24,
+  size,
 }: {
+  size: number;
   fill?: string;
-  size?: number;
 }) {
   return (
-    <div className="relative pt-0.5">
+    <div
+      className="relative mt-[3px]"
+      style={{ width: size + "px", height: size + "px" }} // prevents cursor flicker on hover
+    >
       <svg
         width={size}
         height={size}

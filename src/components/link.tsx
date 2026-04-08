@@ -15,10 +15,10 @@ export const Link = ({
       <a
         href={href}
         target="_blank"
-        className="group flex gap-1 group w-fit text-accent-foreground"
+        className="group flex gap-0.5 group w-fit text-accent-foreground"
       >
         {username}
-        <LinkIcon size={20} />
+        <LinkIcon size={18} />
       </a>
     </div>
   );
