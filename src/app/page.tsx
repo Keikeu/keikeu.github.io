@@ -23,38 +23,20 @@ export default function Home() {
           <section className="relative my-20">
             <SectionTitle>About</SectionTitle>
             <p className="mb-6">
-              Hi, I&apos;m Karolina, a frontend developer based in The Hague
-              combining strong technical skills with a deep sense of form and
-              aesthetics.
+              Hi, I&apos;m Karolina, a frontend developer based in The Hague.
             </p>
             <p className="mb-6">
-              I&apos;ve spent the last 6+ years building and shipping software
-              for early stage startups. I do my best work on small, highly
-              collaborative teams. I care about the details, and enjoy writing
-              code by hand.
+              With over 6 years of experience, I combine strong technical skills
+              with a deep sense of form and aesthetics.
             </p>
             <p className="mb-6">
-              My professional journey started at a small software house where I
-              built a diverse portfolio of client projects - including a job
-              search application, a shipping container scraper, and a 3D
-              modeling tool. That is where I first learned and fell in love with
-              React.
+              I do my best work on small, highly collaborative teams, where the
+              main driver is exceptional user experience. I care about the
+              details and enjoy writing code by hand. My non-coding hours go to
+              climbing, sewing, and puzzles.
             </p>
             <p className="mb-6">
-              Later, I took an opportunity to join an early-stage Polish-French
-              startup with an ambitious goal of creating world-class knowledge
-              platform for customer service. I had significant involvement in
-              developing their core features.
-            </p>
-            <p className="mb-6">
-              Currently, I work at a Rotterdam-based startup building software
-              that helps large companies measure their environmental impact.
-            </p>
-            <p className="mb-6">
-              I have a big love for climbing, sewing, and puzzles.
-            </p>
-            <p className="mb-6">
-              You can gain further insights into who I am through my projects.
+              Take a look at my projects, I&apos;m very proud of them.
             </p>
           </section>
 
