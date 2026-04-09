@@ -27,8 +27,8 @@ export default function Home() {
               Hi, I&apos;m Karolina, a frontend developer based in The Hague.
             </p>
             <p className="mb-6">
-              With over 6 years of experience, I combine strong technical skills
-              with a deep sense of form and aesthetics.
+              With almost 7 years of experience, I combine strong technical
+              skills with a deep sense of form and aesthetics.
             </p>
             <p className="mb-6">
               I do my best work on small, highly collaborative teams, where the
@@ -137,7 +137,7 @@ export default function Home() {
         <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm">
           <p>
             <b>Last modified:</b>
-            <span className="ml-2">4 Apr, 2026</span>
+            <span className="ml-2">9 Apr, 2026</span>
           </p>
           <p className="mt-4">
             Designed in <b>Figma</b>. Built with <b>Next.js</b> and{" "}

@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: "Recitle",
     blurb:
       "Weekend hackathon project - daily game where you guess the song based on its paraphrased lyrics.",
-    skills: ["React", "Styled Components", "AI"],
+    skills: ["React", "Styled Components", "LLM"],
     link: "https://keikeu.github.io/Recitle",
     slides: [
       "/recitle/recitle-1.webp",
