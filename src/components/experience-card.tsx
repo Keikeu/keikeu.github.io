@@ -15,7 +15,7 @@ export const ExperienceCard = ({
   link: string;
 }) => {
   return (
-    <li className="flex bg-accent-background rounded-sm p-2 pr-4 mb-4 justify-between items-center">
+    <li className="flex bg-accent-background rounded-sm p-2 pr-4 mb-4 gap-2 justify-between items-center">
       <div className="flex gap-2 md:gap-4">
         <div className="w-[48px] h-[48px] flex-shrink-0 rounded-sm bg-background dark:bg-foreground flex items-center justify-center">
           <Image
@@ -37,7 +37,9 @@ export const ExperienceCard = ({
               <LinkIcon size={18} />
             </span>
           </a>
-          <span className="text-foreground-muted text-sm">{position}</span>
+          <span className="text-foreground-muted text-sm leading-snug">
+            {position}
+          </span>
         </div>
       </div>
 
