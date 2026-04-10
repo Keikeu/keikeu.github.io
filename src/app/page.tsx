@@ -137,7 +137,7 @@ export default function Home() {
         <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm">
           <p>
             <b>Last modified:</b>
-            <span className="ml-2">9 Apr, 2026</span>
+            <span className="ml-2">10 Apr, 2026</span>
           </p>
           <p className="mt-4">
             Designed in <b>Figma</b>. Built with <b>Next.js</b> and{" "}
