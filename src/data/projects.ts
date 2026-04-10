@@ -4,6 +4,7 @@ export type Project = {
   skills: string[];
   link: string;
   slides: string[];
+  backgroundColor: string;
 };
 
 export const projects: Project[] = [
@@ -26,6 +27,7 @@ export const projects: Project[] = [
       "/cook-your-goose/cook-your-goose-4.webp",
       "/cook-your-goose/cook-your-goose-5.webp",
     ],
+    backgroundColor: "#ffffff",
   },
   {
     title: "Thermostat Democracy",
@@ -50,6 +52,7 @@ export const projects: Project[] = [
       "/thermostat-democracy/thermostat-democracy-7.webp",
       "/thermostat-democracy/thermostat-democracy-8.webp",
     ],
+    backgroundColor: "#efefea",
   },
   {
     title: "Recitle",
@@ -64,6 +67,7 @@ export const projects: Project[] = [
       "/recitle/recitle-4.webp",
       "/recitle/recitle-5.webp",
     ],
+    backgroundColor: "#4c2830",
   },
   {
     title: "Hoporo",
@@ -77,5 +81,6 @@ export const projects: Project[] = [
       "/hoporo/hoporo-4.webp",
       "/hoporo/hoporo-5.webp",
     ],
+    backgroundColor: "#e3dcc4",
   },
 ];

@@ -16,6 +16,7 @@ export const Project = ({
   skills,
   link,
   slides,
+  backgroundColor,
 }: ProjectType & {
   index: number;
 }) => {
@@ -58,7 +59,8 @@ export const Project = ({
       </div>
 
       <div
-        className="relative w-full rounded-lg dark:brightness-80 overflow-hidden"
+        className="relative w-full rounded-lg dark:brightness-85 overflow-hidden"
+        style={{ backgroundColor: backgroundColor }}
         onMouseEnter={() => setShowSlideshowControls(true)}
         onMouseLeave={() => {
           if (!isSmallScreen) setShowSlideshowControls(false);
