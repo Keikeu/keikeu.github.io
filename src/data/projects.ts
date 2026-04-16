@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: "Cook Your Goose",
     blurb:
-      "Recipe manager with web scraping, meal planning and grocery list generation. My biggest project yet. I use it daily.",
+      "Recipe manager with web scraping, automatic timers, meal planning and grocery list generation. Backend built by my partner. We use it daily.",
     skills: [
       "React",
       "Styled Components",

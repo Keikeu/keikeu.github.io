@@ -90,23 +90,6 @@ export default function Home() {
             </ol>
           </section>
 
-          {/* <section className="relative my-20">
-            <SectionTitle>Recommendations</SectionTitle>
-            <p>
-              These are the things I have consumed and loved and want to share
-              with others.
-            </p>
-            <Recommendation href="">Nirvanna The Band The Show</Recommendation>
-            <Recommendation href="">
-              Être et avoir (To Be and to Have)
-            </Recommendation>
-            <Recommendation href="">dimensions.com</Recommendation>
-            <Recommendation href="">
-              The other side of the bridge(?)
-            </Recommendation>
-            <Recommendation href="">Fights in Tight Spaces</Recommendation>
-          </section> */}
-
           <section className="relative my-20">
             <SectionTitle>Connect</SectionTitle>
             <Link
@@ -137,7 +120,7 @@ export default function Home() {
         <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm">
           <p>
             <b>Last modified:</b>
-            <span className="ml-2">10 Apr, 2026</span>
+            <span className="ml-2">16 Apr, 2026</span>
           </p>
           <p className="mt-4">
             Designed in <b>Figma</b>. Built with <b>Next.js</b> and{" "}
