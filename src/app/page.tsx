@@ -27,14 +27,16 @@ export default function Home() {
               Hi, I&apos;m Karolina, a frontend developer based in The Hague.
             </p>
             <p className="mb-6">
-              With almost 7 years of experience, I combine strong technical
-              skills with a deep sense of form and aesthetics.
+              With over 7 years of experience, I combine strong technical skills
+              with a deep sense of form and aesthetics.
             </p>
             <p className="mb-6">
               I do my best work on small, highly collaborative teams, where the
               main driver is exceptional user experience. I care about the
-              details and enjoy writing code by hand. My non-coding hours go to
-              climbing, sewing, and puzzles.
+              details and enjoy writing code by hand.
+            </p>
+            <p className="mb-6">
+              My non-coding hours go to climbing, sewing, and puzzles.
             </p>
             <p className="mb-6">
               Take a look at my projects, I&apos;m very proud of them.
@@ -120,7 +122,7 @@ export default function Home() {
         <footer className="mt-18 py-10 opacity-70 text-foreground-muted text-sm">
           <p>
             <b>Last modified:</b>
-            <span className="ml-2">16 Apr, 2026</span>
+            <span className="ml-2">15 May, 2026</span>
           </p>
           <p className="mt-4">
             Designed in <b>Figma</b>. Built with <b>Next.js</b> and{" "}
