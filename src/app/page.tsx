@@ -6,6 +6,7 @@ import { SectionTitle } from "@/components/section-title";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Divider } from "@/components/divider";
 import { projects } from "@/data/projects";
+import { Recommendation } from "@/components/recommendation";
 
 export default function Home() {
   return (
@@ -90,6 +91,60 @@ export default function Home() {
                 <Project key={project.title} index={i} {...project} />
               ))}
             </ol>
+          </section>
+
+          <section className="relative my-20">
+            <SectionTitle>Watching</SectionTitle>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Recommendation
+                link="https://letterboxd.com/film/aftersun/"
+                title="Aftersun"
+                year="2022"
+                creator="Charlotte Wells"
+                cover="/covers/aftersun.webp"
+              />
+              <Recommendation
+                link="https://letterboxd.com/film/anora/"
+                title="Anora"
+                year="2024"
+                creator="Sean Baker"
+                cover="/covers/anora.webp"
+              />
+              <Recommendation
+                link="https://www.imdb.com/title/tt38504111/"
+                title="Small Prophets"
+                year="2026-"
+                creator="Mackenzie Crook"
+                cover="/covers/small-prophets.webp"
+              />
+              <Recommendation
+                link="https://www.imdb.com/title/tt22202452/"
+                title="Pluribus"
+                year="2025-"
+                creator="Vince Gilligan"
+                cover="/covers/pluribus.webp"
+              />
+            </ul>
+          </section>
+
+          <section className="relative my-20">
+            <SectionTitle>Reading</SectionTitle>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Recommendation
+                link="https://www.goodreads.com/book/show/1848.Wild_Swans"
+                title="Wild Swans: Three Daughters of China"
+                year="1991"
+                creator="Jung Chang"
+                cover="/covers/wild-swans.webp"
+              />
+              <Recommendation
+                link="https://www.goodreads.com/book/show/54493401-project-hail-mary"
+                title="Project Hail Mary"
+                year="2021"
+                creator="Andy Weir"
+                cover="/covers/project-hail-mary.webp"
+              />
+            </ul>
           </section>
 
           <section className="relative my-20">
